@@ -1,0 +1,88 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="height: 0">
+    <defs>
+      <filter class="b1">
+        <feGaussianBlur
+          in="SourceGraphic"
+          stdDeviation="9"
+          result="blur"
+        ></feGaussianBlur>
+        <feColorMatrix
+          in="blur"
+          mode="matrix"
+          values="1 0 0 0 0   0 1 0 0 0   0 0 1 0 0   0 0 0 21 -8"
+        ></feColorMatrix>
+      </filter>
+    </defs>
+  </svg>
+  <body>
+    <div id="perspectiveLayer">
+      <div id="fragileLayer" class="scene">
+        <canvas id="c">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="flame">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0   0 1 0 0 0   0 0 1 0 0   0 0 0 21 -8"
+                ></feColorMatrix>
+              </filter>
+            </defs>
+          </svg>
+        </canvas>
+        <canvas id="canvas3" data-depth="0.05" style="opacity: 0"></canvas>
+        <canvas id="canvas1" data-depth="0.2"></canvas>
+
+        <canvas id="canvas2" data-depth="0.1"></canvas>
+
+        <!-- <canvas id="cloth"></canvas> -->
+      </div>
+    </div>
+
+    <div class="main-container" id="scrollWrapper">
+      <a class="logo-wrapper" href="#"></a>
+
+      <!-- <section class="container">
+        <div class="row">
+          <div class="col-15">
+            <h1 class="strip">test fddfsd ||| adafdf</h1>
+            <h1 class="strip">test fddfsd ||| adafdf</h1>
+            <h1 class="strip">test fddfsd ||| adafdf</h1>
+            <h1 class="strip">test fddfsd ||| adafdf</h1>
+            <h1 class="strip">test fddfsd ||| adafdf</h1>
+            <h1 class="strip">test fddfsd ||| adafdf</h1>
+            <h1 class="strip">test fddfsd ||| adafdf</h1>
+          </div>
+        </div>
+      </section> -->
+    </div>
+    <!-- <canvas id="canvas"></canvas> -->
+  </body>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/plugins/overscroll.js"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script type="text/javascript" src="assets/js/style.js"></script>
+<!-- <script type="text/javascript" src="assets/js/cloth.js"></script> -->
+<!-- <script type="text/javascript" src="assets/js/layer1.js"></script> -->
